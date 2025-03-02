@@ -1,0 +1,151 @@
+/* sports.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #637586;
+  color: white;
+}
+
+header img {
+  height: 50px;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+header form input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+header form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
+
+main h1 {
+  color: #004080;
+}
+
+.content h2 {
+  color: #007bff;
+  border-bottom: 2px solid #004080;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+article {
+  background-color: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+  margin: 0;
+  color: #004080;
+}
+
+article p {
+  margin: 10px 0;
+}
+
+article ul {
+  list-style: none;
+  padding: 0;
+}
+
+article ul li {
+  margin: 10px 0;
+}
+
+article ul li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+article ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #004080;
+  color: white;
+}
+
+footer .quick-links,
+footer .contact-info,
+footer .info-officer {
+  width: 30%;
+}
+
+footer h4 {
+  margin-top: 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 5px 0;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .contact-info p,
+footer .info-officer p {
+  margin: 5px 0;
+}
+
+#copyright {
+  text-align: center;
+  padding: 10px;
+  background-color: #003366;
+  color: white;
+}
