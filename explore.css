@@ -1,0 +1,199 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main section {
+  margin-bottom: 40px;
+}
+
+main h2 {
+  font-size: 2rem;
+  color: #003366;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+main h3 {
+  font-size: 1.5rem;
+  color: #003366;
+  margin-top: 20px;
+}
+
+main p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  margin: 10px 0;
+  display: block;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+li {
+  margin: 5px 0;
+}
+
+a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+  color: #ffcc00;
+  text-shadow: 0px 0px 5px #ffcc00;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-top: 5px solid #ffcc00;
+}
+
+#faculties {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  main h2 {
+    font-size: 1.8rem;
+  }
+
+  main p {
+    font-size: 0.9rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  display: block;
+}
+
+#about img {
+  margin-left: 350px;
+  border: 5px solid #003366;
+  box-shadow: 0 5px 15px rgba(0, 51, 102, 0.5);
+}
+
+#about img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+#campuses img {
+  border: 3px solid #ffcc00;
+  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.7);
+}
+
+#campuses img:hover {
+  transform: scale(1.1);
+  filter: saturate(1.3);
+}
+
+#faculties img {
+  border: 4px double #0066cc;
+  box-shadow: 0 5px 12px rgba(0, 102, 204, 0.6);
+}
+
+#faculties img:hover {
+  transform: scale(1.1);
+  filter: grayscale(50%);
+}
+
+#research img {
+  margin-left: 350px;
+  border: 4px dashed #009933;
+  box-shadow: 0 6px 12px rgba(0, 153, 51, 0.5);
+}
+
+#research img:hover {
+  transform: scale(1.08);
+}
+
+#events img {
+  display: flex;
+  flex-wrap: wrap;
+  border: 6px groove #990033;
+  box-shadow: 0 8px 16px rgba(153, 0, 51, 0.5);
+}
+
+#events img:hover {
+  transform: scale(1.08);
+  filter: contrast(1.2);
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#upcomming {
+  text-align: center;
+}
