@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="admission.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Far-Western University</h1>
+      <h2>Faculty of Engineering</h2>
+      <p>Mahendranagar, Kanchanpur</p>
+      <p>
+        Phone: 099520296 | Email:
+        <a href="mailto:dean.engineering@fwu.edu.np"
+          >dean.engineering@fwu.edu.np</a
+        >
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h3>Online Admission</h3>
+        <form id="admission-form" enctype="multipart/form-data">
+          <!-- Submission Code -->
+          <label for="submission-code">Submission Code *</label>
+          <input
+            type="text"
+            id="submission-code"
+            name="submission-code"
+            required
+            placeholder="Enter Code"
+          />
+
+          <!-- Programme Selection -->
+          <label for="program">Select Programmes:</label>
+          <select id="program" name="program">
+            <option value="msc-construction">
+              M.Sc. Construction Project Management
+            </option>
+          </select>
+
+          <!-- Personal Details -->
+          <h4>Personal Details:</h4>
+          <label for="name">Name (In BLOCK LETTER) *</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Name"
+          />
+
+          <label for="birth-date-bs">Birth Date (BS) *</label>
+          <input
+            type="text"
+            id="birth-date-bs"
+            name="birth-date-bs"
+            placeholder="BS Format"
+          />
+
+          <label for="birth-date-ad">Birth Date (AD) *</label>
+          <input
+            type="text"
+            id="birth-date-ad"
+            name="birth-date-ad"
+            placeholder="AD Format"
+          />
+
+          <label for="gender">Gender *</label>
+          <select id="gender" name="gender" required>
+            <option value="">--Select--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="national-id">National ID</label>
+          <input
+            type="text"
+            id="national-id"
+            name="national-id"
+            placeholder="National ID"
+          />
+
+          <label for="district">District *</label>
+          <select id="district" name="district" required>
+            <option value="">--Select--</option>
+            <label for="district">District *</label>
+            <!-- Koshi Province -->
+            <option value="taplejung">Taplejung</option>
+            <option value="panchthar">Panchthar</option>
+            <option value="ilam">Ilam</option>
+            <option value="jhapa">Jhapa</option>
+            <option value="morang">Morang</option>
+            <option value="sunsari">Sunsari</option>
+            <option value="dhankuta">Dhankuta</option>
+            <option value="terhathum">Terhathum</option>
+            <option value="bhojpur">Bhojpur</option>
+            <option value="sankhuwasabha">Sankhuwasabha</option>
+            <option value="solukhumbu">Solukhumbu</option>
+            <option value="okhaldhunga">Okhaldhunga</option>
+            <option value="khotang">Khotang</option>
+            <option value="udayapur">Udayapur</option>
+            <!-- Madhesh Province -->
+            <option value="saptari">Saptari</option>
+            <option value="siraha">Siraha</option>
+            <option value="dhanusha">Dhanusha</option>
+            <option value="mahottari">Mahottari</option>
+            <option value="sarlahi">Sarlahi</option>
+            <option value="rautahat">Rautahat</option>
+            <option value="bara">Bara</option>
+            <option value="parsa">Parsa</option>
+            <!-- Bagmati Province -->
+            <option value="sindhuli">Sindhuli</option>
+            <option value="ramechhap">Ramechhap</option>
+            <option value="dolakha">Dolakha</option>
+            <option value="sindhupalchok">Sindhupalchok</option>
+            <option value="kavrepalanchok">Kavrepalanchok</option>
+            <option value="lalitpur">Lalitpur</option>
+            <option value="bhaktapur">Bhaktapur</option>
+            <option value="kathmandu">Kathmandu</option>
+            <option value="nuwakot">Nuwakot</option>
+            <option value="rasuwa">Rasuwa</option>
+            <option value="dhading">Dhading</option>
+            <!-- Gandaki Province -->
+            <option value="gorkha">Gorkha</option>
+            <option value="lamjung">Lamjung</option>
+            <option value="tanahun">Tanahun</option>
+            <option value="syangja">Syangja</option>
+            <option value="kaski">Kaski</option>
+            <option value="manang">Manang</option>
+            <option value="mustang">Mustang</option>
+            <option value="parbat">Parbat</option>
+            <option value="myagdi">Myagdi</option>
+            <option value="baglung">Baglung</option>
+            <!-- Lumbini Province -->
+            <option value="gulmi">Gulmi</option>
+            <option value="palpa">Palpa</option>
+            <option value="nawalparasi-east">Nawalparasi (East)</option>
+            <option value="nawalparasi-west">Nawalparasi (West)</option>
+            <option value="rupandehi">Rupandehi</option>
+            <option value="arghakhanchi">Arghakhanchi</option>
+            <option value="kapilvastu">Kapilvastu</option>
+            <option value="dang">Dang</option>
+            <option value="pyuthan">Pyuthan</option>
+            <option value="rolpa">Rolpa</option>
+            <option value="rukum-east">Rukum (East)</option>
+            <option value="rukum-west">Rukum (West)</option>
+            <!-- Karnali Province -->
+            <option value="surkhet">Surkhet</option>
+            <option value="dailekh">Dailekh</option>
+            <option value="jajarkot">Jajarkot</option>
+            <option value="dolpa">Dolpa</option>
+            <option value="jumla">Jumla</option>
+            <option value="kalikot">Kalikot</option>
+            <option value="mugu">Mugu</option>
+            <option value="humla">Humla</option>
+            <!-- Sudurpashchim Province -->
+            <option value="bajura">Bajura</option>
+            <option value="bajhang">Bajhang</option>
+            <option value="achham">Achham</option>
+            <option value="doti">Doti</option>
+            <option value="kailali">Kailali</option>
+            <option value="kanchanpur">Kanchanpur</option>
+            <option value="dadeldhura">Dadeldhura</option>
+            <option value="baitadi">Baitadi</option>
+            <option value="darchula">Darchula</option>
+          </select>
+
+          <label for="date-issue">Date of Issue</label>
+          <input
+            type="text"
+            id="date-issue"
+            name="date-issue"
+            placeholder="Date of Issue"
+          />
+
+          <label for="blood-group">Blood Group</label>
+          <select id="blood-group" name="blood-group">
+            <option value="">--Select--</option>
+            <option value="a+">A+</option>
+            <option value="a-">A-</option>
+            <option value="b+">B+</option>
+            <option value="b-">B-</option>
+            <option value="o+">O+</option>
+            <option value="o-">O-</option>
+            <option value="ab+">AB+</option>
+            <option value="ab-">AB-</option>
+          </select>
+
+          <label for="birth-place">Birth Place</label>
+          <input
+            type="text"
+            id="birth-place"
+            name="birth-place"
+            placeholder="Birth Place"
+          />
+
+          <label for="photo">Upload Latest Passport Size Photo</label>
+          <input
+            type="file"
+            id="photo"
+            name="photo"
+            accept=".jpg, .jpeg, .png, .gif"
+          />
+
+          <!-- Permanent Address -->
+          <h4>Permanent Address:</h4>
+          <label for="municipality">Municipality</label>
+          <input type="text" id="municipality" name="municipality" />
+
+          <label for="ward-no">Ward No.</label>
+          <input type="text" id="ward-no" name="ward-no" />
+
+          <label for="district">District</label>
+          <input type="text" id="address-district" name="address-district" />
+
+          <label for="province">Province</label>
+          <input type="text" id="province" name="province" />
+
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" />
+
+          <label for="postal-code">Postal Code</label>
+          <input type="text" id="postal-code" name="postal-code" />
+
+          <label for="phone">Phone (Land-Line)</label>
+          <input type="text" id="phone" name="phone" />
+
+          <label for="mobile">Mobile No. *</label>
+          <input
+            type="text"
+            id="mobile"
+            name="mobile"
+            required
+            placeholder="Mobile No."
+          />
+
+          <label for="email">Email *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Email"
+          />
+
+          <!-- Guardian Information -->
+          <h4>Guardian Information:</h4>
+          <label for="guardian-is">Is Guardian? *</label>
+          <select id="guardian-is" name="guardian-is" required>
+            <option value="">--Select--</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+
+          <label for="guardian-phone">Phone *</label>
+          <input
+            type="text"
+            id="guardian-phone"
+            name="guardian-phone"
+            required
+          />
+
+          <label for="guardian-name">Name *</label>
+          <input type="text" id="guardian-name" name="guardian-name" required />
+
+          <label for="guardian-email">Email</label>
+          <input type="email" id="guardian-email" name="guardian-email" />
+
+          <label for="guardian-profession">Profession</label>
+          <input
+            type="text"
+            id="guardian-profession"
+            name="guardian-profession"
+          />
+
+          <!-- Academic Qualification -->
+          <h4>Academic Qualification:</h4>
+          <p>SLC/SEE</p>
+          <label for="institution-1">Institution/Board/University</label>
+          <input type="text" id="institution-1" name="institution-1" />
+
+          <!-- Additional fields for qualifications -->
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

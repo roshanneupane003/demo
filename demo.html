@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faculty of Engineering</title>
+    <link rel="stylesheet" href="demo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://facultyengineering.fwu.edu.np/assets/uploads/logo/1675650509-school-front-logo.png"
+        alt="FWU Logo"
+      />
+      <nav class="header1">
+        <a href="students.html">Students</a>
+        <a href="staffs.html">Teachers & Staffs</a>
+      </nav>
+      <form id="form1">
+        <input type="text" id="searchInput" placeholder="Search..." />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </header>
+    <main>
+      <section class="content">
+        <h1>Faculty of Engineering</h1>
+        <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </section>
+      <nav class="header2">
+        <a href="news.html">News</a> <a href="admission.html">Admission</a>
+        <a href="about.html">About</a>
+        <section class="options">
+          <label for="academic-options"></label>
+          <select id="academic-options" onchange="navigate(this.value)">
+            <option value="" disabled selected hidden>Academics</option>
+            <option value="campus.html">Campus</option>
+            <option value="program.html">Program</option>
+            <option value="syllabus.html">Syllabus</option>
+            <option value="journal.html">Journal</option>
+          </select>
+        </section>
+      </nav>
+      <div class="explore"><a href="explore.html">Explore FWU &#x25BC;</a></div>
+    </main>
+    <footer>
+      <div class="quick-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="https://moe.gov.np/">Ministry of Education</a></li>
+          <li>
+            <a href="https://www.ugcnepal.edu.np/"
+              >University Grants Commission</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="contact-info">
+        <h4>Get in Touch</h4>
+        <p>Phone: +977-099-520729</p>
+        <p>Email: <a href="mailto:info@fwu.edu.np">info@fwu.edu.np</a></p>
+        <p>Address: Bheemdatta Municipality-18, Mahendranagar, Kanchanpur</p>
+      </div>
+      <div class="info-officer">
+        <h4>Information Officer</h4>
+        <p>Santosh Bist</p>
+        <p>Phone: 9858751161</p>
+        <p>
+          Email:
+          <a href="mailto:santosh.bist@fwu.edu.np">santosh.bist@fwu.edu.np</a>
+        </p>
+      </div>
+    </footer>
+    <section id="copyright"><p>&copy; 2025 Far Western University</p></section>
+    <script src="demo.js"></script>
+  </body>
+</html>

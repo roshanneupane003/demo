@@ -1,0 +1,59 @@
+body {
+  background-image: url("https://wallpapers-max.b-cdn.net/wallpapers/2024/13feb/thumb/deep-black-surface-with-wavy-lines-wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: white;
+}
+
+#home {
+  margin-left: 500px;
+  width: 100px;
+  align-items: center;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+}
+#home a {
+  color: white;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  color: #0056b3;
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 10px;
+}
+h2 {
+  margin-top: 40px;
+}
+p {
+  margin: 10px 0;
+}
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+li {
+  margin: 5px 0;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.vc-message {
+  margin-top: 40px;
+}
+.signature {
+  margin-top: 20px;
+  font-style: italic;
+}
