@@ -1,0 +1,98 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header styling */
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header h2 {
+  margin: 5px 0 0;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+/* Main content styling */
+main {
+  margin: 20px;
+}
+
+.content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content h3 {
+  color: #4caf50;
+  margin-top: 20px;
+}
+
+.content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+}
+
+/* List styles for different sections */
+.team-list li,
+.coordinators-list li,
+.objectives-list li,
+.units-list li,
+.responsibilities-list li,
+.programs-list li {
+  margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Links styling */
+a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Box styling for sections */
+.content p {
+  margin-bottom: 15px;
+}
+
+.content ul {
+  margin-top: 0;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPMNzcZOUSXE1kJFIQDoI-0D3jgQtoMv4n_w&s"
+        alt="Logo"
+        class="logo"
+      />
+      <h1>Login</h1>
+      <form>
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Username" required />
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" required />
+        </div>
+        <div class="forgot-password">
+          <a href="forgot.html">Forgot Password?</a>
+        </div>
+        <button type="submit">Login</button>
+        <p class="register-link">
+          Don't have an account? <a href="fsignup.html">sign up</a>
+        </p>
+      </form>
+      <div class="error-message" style="display: none">
+        <p>Error: Invalid username or password</p>
+      </div>
+      <div class="social-login">
+        <button class="facebook-login">
+          <i class="fab fa-facebook-f"></i> Log in with Facebook
+        </button>
+        <button class="google-login">
+          <i class="fab fa-google"></i> Log in with Google
+        </button>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>

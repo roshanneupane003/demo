@@ -1,0 +1,77 @@
+/* Style for the entire journal page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  max-height: 60px;
+}
+
+header .main-nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+header .main-nav a.active {
+  border-bottom: 2px solid #ffd700;
+}
+
+/* Main section styles */
+main .journal-content {
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main .journal-content h1 {
+  color: #4caf50;
+}
+
+main .journal-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+main .journal-content .external-link {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+main .journal-content .external-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
