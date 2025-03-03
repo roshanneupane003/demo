@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -16,35 +20,91 @@
         src="https://facultyengineering.fwu.edu.np/assets/uploads/logo/1675650509-school-front-logo.png"
         alt="FWU Logo"
       />
-      <nav class="header1">
-        <a href="students.html">Students</a>
-        <a href="staffs.html">Teachers & Staffs</a>
+      <nav
+        class="header1 flex justify-center space-x-8 bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white py-4 shadow-md"
+      >
+        <a
+          href="students.html"
+          class="hover:text-blue-400 transition-colors font-semibold hover:underline hover:scale-105 transform duration-200"
+          >Students</a
+        >
+        <a
+          href="staffs.html"
+          class="hover:text-blue-400 transition-colors font-semibold hover:underline hover:scale-105 transform duration-200"
+          >Teachers & Staff</a
+        >
       </nav>
-      <form id="form1">
-        <input type="text" id="searchInput" placeholder="Search..." />
-        <button type="submit"><i class="fas fa-search"></i></button>
+      <form id="form1" class="flex items-center space-x-2">
+        <input
+          type="text"
+          id="searchInput"
+          class="border border-gray-300 rounded-full py-2 px-4 bg-white bg-opacity-75 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-blue-500 shadow-md transition-transform transform hover:scale-105 focus:scale-110"
+          placeholder="Search..."
+        />
+        <button
+          type="submit"
+          class="bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold py-2 px-4 rounded-full shadow-md hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transform transition-transform hover:scale-105"
+        >
+          <i class="fas fa-search"></i>
+        </button>
       </form>
     </header>
     <main>
       <section class="content">
         <h1>Faculty of Engineering</h1>
-        <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <a
+          href="login.html"
+          class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-purple-500 hover:to-red-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl"
+        >
+          <i class="fas fa-sign-in-alt"></i> Login
+        </a>
       </section>
-      <nav class="header2">
-        <a href="news.html">News</a> <a href="admission.html">Admission</a>
-        <a href="about.html">About</a>
-        <section class="options">
-          <label for="academic-options"></label>
-          <select id="academic-options" onchange="navigate(this.value)">
+
+      <nav
+        class="header2 flex justify-center space-x-6 bg-gradient-to-r from-gray-800 via-gray-900 to-gray-700 text-white py-4 mt-4 shadow-md"
+      >
+        <a
+          href="news.html"
+          class="hover:text-green-400 transition-colors font-semibold hover:underline hover:scale-105 transform duration-200"
+          >News</a
+        >
+        <a
+          href="admission.html"
+          class="hover:text-green-400 transition-colors font-semibold hover:underline hover:scale-105 transform duration-200"
+          >Admission</a
+        >
+        <a
+          href="about.html"
+          class="hover:text-green-400 transition-colors font-semibold hover:underline hover:scale-105 transform duration-200"
+          >About</a
+        >
+        <section class="options inline-block relative">
+          <select
+            id="academic-options"
+            class="block appearance-none w-full bg-gray-800 border border-gray-700 text-white py-2 px-4 pr-10 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transform hover:scale-105 duration-200 shadow-md"
+            onchange="navigate(this.value)"
+          >
             <option value="" disabled selected hidden>Academics</option>
             <option value="campus.html">Campus</option>
             <option value="program.html">Program</option>
             <option value="syllabus.html">Syllabus</option>
             <option value="journal.html">Journal</option>
           </select>
+          <div
+            class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-white"
+          >
+            <i class="fas fa-chevron-down"></i>
+          </div>
         </section>
       </nav>
-      <div class="explore"><a href="explore.html">Explore FWU &#x25BC;</a></div>
+      <div class="explore">
+        <a
+          href="explore.html"
+          class="bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-gradient-to-br hover:from-gray-900 hover:to-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-all duration-200"
+        >
+          Explore FWU &#x25BC;
+        </a>
+      </div>
     </main>
     <footer>
       <div class="quick-links">
